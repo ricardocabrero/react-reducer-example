@@ -1,0 +1,34 @@
+
+.form, .form *, .form:after, .form:before {
+    box-sizing: border-box;
+}
+
+.form {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.form input {
+    width: 75%;
+    height: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    padding: 0 5px;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.form button {
+    width: 25%;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #0d6efd;
+    background: #0d6efd;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+}

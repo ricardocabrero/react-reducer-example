@@ -1,0 +1,24 @@
+
+.btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btns button {
+    border: none;
+    color: #fff;
+    height: 30px;
+    padding: 3px 10px;
+    background: #0dcaf0;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0 0 3px #ccc;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.btns button:disabled {
+    background: #ffc107;
+}
