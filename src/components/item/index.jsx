@@ -6,8 +6,6 @@ const Item = ({todo, index, deleteItem, toggleSelect}) => {
 
     const { id, selected, description } = todo;
 
-    const classSelected = (selected) =>  selected ? `${styles.selected}` : ``;
-
     const handleBtn = (id) => (e) => {
         deleteItem(id);
     }
@@ -18,13 +16,16 @@ const Item = ({todo, index, deleteItem, toggleSelect}) => {
 
     return(
         <li 
-        className={`${styles.item} ${classSelected(selected)}`}
+        className={styles.item}
         id={id}>
             <span>{index+1}.</span>
             <input type="checkbox" 
+            id={description}
             onChange={handleCheck(id)}
             checked={selected}/>
-            <p>{description}</p>
+            <label htmlFor={description}>
+            {description}
+            </label>
             <button onClick={handleBtn(id)}>Delete</button>
         </li>
     )

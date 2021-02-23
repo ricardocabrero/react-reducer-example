@@ -7,23 +7,11 @@
     align-items: center;
 }
 
-.item.selected p {
-    text-decoration: line-through;
-}
-
-.item p {
-    margin: 0;
-    flex: 2 1 auto;
-    text-align: left;
-    padding: 0 5px;
-    text-transform: capitalize;
-}
-
 .item span {
     width: 21px;
 }
 
-button {
+.item button {
     color: #fff;
     border: none;
     background: #dc3545;
@@ -32,3 +20,29 @@ button {
     border-radius: 4px;
     padding: 0 10px;
 }
+
+.item label {
+    text-transform: capitalize;
+    margin: 0;
+    flex: 2 1 auto;
+    text-align: left;
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+
+.item input {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.item input:checked {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.item input:checked + label {
+    text-decoration: line-through;
+}
+

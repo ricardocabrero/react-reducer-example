@@ -17,6 +17,7 @@
     box-shadow: 0 0 3px #ccc;
     text-transform: capitalize;
     outline: none;
+    width: 95px;
 }
 
 .btns button:disabled {
